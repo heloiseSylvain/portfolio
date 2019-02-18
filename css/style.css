@@ -1,0 +1,139 @@
+* {
+	font-family: 'Major Mono Display', monospace;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #E0928E; 
+}
+
+html{
+	background-color: #F9ECEB;
+	scroll-behavior: smooth;
+}
+
+section{
+	height: 720px;
+	width: 99vw;
+}
+
+/*-------------------------------ACCUEIL------------------------*/
+section.accueil{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+section.accueil div#accueil-flex{
+	height: 30%;
+	margin-left: 10vw;
+}
+
+section h1{
+	margin: 0;
+	font-size:10vh;
+	color: #4C6E53;
+
+}
+
+.typewrite{
+	text-decoration: none;
+	color: #E0928E;
+	font-size: 4vh;
+}
+/*---------------compétences-----------------------------------*/
+
+section.competences {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+} 
+
+section.competences h2{
+	color: #4C6E53;
+	margin-left: 10vw;
+	align-self: flex-start;
+}
+
+/*---------------compétences-----------------------------------*/
+
+section.gallerie {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+} 
+
+section.gallerie h2{
+	color: #4C6E53;
+	align-self: flex-start;
+}
+
+section.gallerie div#conteneurGallerie{
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+section.gallerie div#conteneurGallerie div{
+	background-color: white;
+	width: 25vw;
+	height: 25vh;
+	margin: 1vw;
+}
+
+
+
+/*-------------------------------footer------------------------*/
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+footer p{
+font-size: 2vh;
+text-align: center;
+color: #4C6E53;
+}
+
+/*-----------------------------Petits écrans----------------------*/
+@media only screen and (max-width: 1010px) {
+	footer {
+		margin-bottom: 0.5vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	footer p{
+		font-size: 2vh;
+		margin:0.5vh;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	footer {
+		margin-bottom: 0.5vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	footer p{
+		font-size: 1.5vh;
+		margin:0.5vh;
+	}
+}

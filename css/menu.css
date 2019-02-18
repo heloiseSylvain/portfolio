@@ -1,0 +1,115 @@
+body {
+  margin:0;
+}
+
+#burger-menu {
+  cursor: pointer;
+  height: 27px;
+  width: 27px;
+  margin: 50px;
+  right: 0px;
+  overflow: visible;
+  position: fixed;
+   z-index:2;
+}
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+  background: #E0928E;
+  display: block;
+  height: 2px;
+  opacity: 1;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+#burger-menu span:before,
+#burger-menu span:after {
+  content: "";
+}
+#burger-menu span {
+  right: 0px;
+  top: 13px;
+  width: 30px;
+}
+#burger-menu span:before {
+  left: 0px;
+  top: -10px;
+  width: 40px;
+}
+#burger-menu span:after {
+  left: 0px;
+  top: 10px;
+  width: 40px;
+}
+
+#burger-menu.close span {
+   background: #F9ECEB;
+  transform: rotate(-45deg);
+  top: 13px;
+  width: 40px;
+}
+#burger-menu.close span:before {
+   background: #F9ECEB;
+  top: 0px;
+  transform: rotate(90deg);
+  width: 40px;
+}
+#burger-menu.close span:after {
+   background: #F9ECEB;
+  top: 0px;
+  left:0;
+  transform: rotate(90deg);
+  opacity:0;
+  width:0;
+}
+
+#menu{
+  z-index:1;
+  min-width:100%;
+  min-height:100%;
+  position: fixed;
+  top:0;
+  height:0;
+  visibility: hidden;
+  opacity: 0;
+  text-align:center;
+  padding-top:20px;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+#menu.overlay{
+  visibility: visible;
+  opacity: 1;
+  padding-top:15vh;
+  background: #E0928E;
+}
+
+#menu ul {
+   margin:0;
+   padding: 0;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   
+}
+
+#menu li{
+  list-style:none;
+   margin-top: 5vh;
+  margin-bottom:5vh;
+}
+
+#menu a{
+   padding-top: 1vh;
+   color:#F9ECEB;
+  font-size: 5vh;
+  text-decoration: none;
+  border-top: 2px solid transparent;
+  transition: all ease-in-out 0.5s;
+}
+
+#menu a:hover{
+   border-color: #F9ECEB;
+}
