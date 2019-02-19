@@ -74,10 +74,12 @@ section.gallerie {
 } 
 
 section.gallerie h2{
+	position: absolute;
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
 	margin: 0;
-	margin-right: -5.5vw;
 	color: #4C6E53;
-	//align-self: flex-start;
 	transform: rotate(-90deg);
 }
 
@@ -97,6 +99,10 @@ section.gallerie div#conteneurGallerie div{
 	margin: 1vw;
 	flex-grow: 1;
 }
+
+section.gallerie div#conteneurGallerie div:first-child{
+	position: relative;
+	}
 
 
 /*---------------Contacter-----------------------------------*/
@@ -210,15 +216,6 @@ color: #4C6E53;
 		height: auto;
 	}
 
-	section.gallerie div#conteneurGallerie{
-    margin-right: 8vw;
-	}
-
-	section.gallerie h2{
-
-		margin-right: -10vw;
-	}
-
 	section.contacter form {
 		flex-direction: column;
 	}
@@ -246,18 +243,5 @@ color: #4C6E53;
 	footer p{
 		font-size: 1.5vh;
 		margin:0.5vh;
-	}
-}
-
-@media only screen and (max-width: 500px) {
-
-	section.gallerie div#conteneurGallerie{
-    margin-right: 10vw;
-	}
-
-	section.gallerie h2{
-		margin-right: -23vw;
-		align-self: flex-start;
-    margin-top: 23vw;
 	}
 }
