@@ -64,7 +64,7 @@ section.competences h2{
 	align-self: flex-start;
 }
 
-/*---------------compétences-----------------------------------*/
+/*---------------Gallerie-----------------------------------*/
 
 section.gallerie {
 	display: flex;
@@ -74,26 +74,96 @@ section.gallerie {
 } 
 
 section.gallerie h2{
+	margin: 0;
+	margin-right: -5.5vw;
 	color: #4C6E53;
-	align-self: flex-start;
+	//align-self: flex-start;
+	transform: rotate(-90deg);
 }
 
 section.gallerie div#conteneurGallerie{
-	width: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
+	width: 85%;
 }
 
 section.gallerie div#conteneurGallerie div{
 	background-color: white;
 	width: 25vw;
-	height: 25vh;
+	height: 30vh;
 	margin: 1vw;
+	flex-grow: 1;
 }
 
+
+@media only screen and (max-width: 768px) {
+
+section.gallerie div#conteneurGallerie div{
+	width: 226px;
+	height: 146px;
+}
+
+}
+
+/*---------------Contacter-----------------------------------*/
+
+section.contacter{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section.contacter h2{
+	color: #4C6E53;
+	margin-right: 18vw;
+	align-self: flex-end;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #E0928E;
+  opacity: 1; /* Firefox */
+}
+
+section.contacter form {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+div#formGauche{
+	margin-right: 2vw;
+	height: 29vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+div#formGauche input{
+	flex-grow: 1;
+	border: none;
+	padding-left: 1vw;
+	margin: 1vh 0 1vh 0;
+	height: 5vh;
+	width: 35vw;
+	color: #E0928E;
+}
+
+div#formDroite textarea{
+	flex-grow: 1;
+	border: none;
+	padding-left: 1vw;
+	padding-top: 1vw;
+	height: 25vh;
+	width: 35vw;
+	color: #E0928E;
+}
 
 
 /*-------------------------------footer------------------------*/
