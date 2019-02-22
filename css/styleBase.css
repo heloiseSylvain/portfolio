@@ -21,13 +21,16 @@ html{
 }
 
 section{
-	height: 100vh;
+	min-height: 100vh;
+	max-height: auto;
 	width: 99vw;
 }
 
 /*-------------------------------ACCUEIL------------------------*/
 section.accueil{
-    margin: 0;
+	margin: 0;
+	height: 100vh;
+	max-height: 100vh;
     width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -67,26 +70,48 @@ section.accueil h1{
 
 
 /*---------------À propos-----------------------------------*/
+
 #aPropos{
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	justify-content: center;
-}
-#aPropos-flex{
 	display: flex;
 	align-content: center;
 	justify-content: center;
 }
 
-#aPropos-flex p{
-	width: 25vw;
+#aPropos p{
+	margin-left: 1vw;
+	line-height: 22px;
+	height: 100%;
+	color: #4C6E53;
+	width: 35vw;
+	text-align: justify;
 }
 
 #photoMoi{
-	
-	background-image: url("../images/photo.jpg");
+    height: auto; 
+    width: auto; 
+    max-width: 415px; 
+    max-height: 415px;
 }
+
+#aPropos-Gauche{
+	position: relative;
+    height: 100vh; 
+    width: auto; 
+    max-width: 415px; 
+    max-height: 415px;
+}
+
+section.aPropos h2{
+	position: absolute;
+	bottom: 0;
+	left: 1.5vw;
+	transform-origin: left;
+	margin: 0;
+	color: #F9ECEB;
+	transform: rotate(-90deg);
+	z-index: 1;
+}
+
 
 /*---------------compétences-----------------------------------*/
 
@@ -114,9 +139,9 @@ section.gallerie {
 
 section.gallerie h2{
 	position: absolute;
-  bottom: 0;
-  left: 0;
-  transform-origin: left;
+  	bottom: 0;
+  	left: 0;
+  	transform-origin: left;
 	margin: 0;
 	color: #4C6E53;
 	transform: rotate(-90deg);
@@ -294,8 +319,8 @@ color: #4C6E53;
     
     .typewrite{
         font-size: 4vw;
-    }
-
+	}
+	
 	section.competences, section.gallerie{
 		height: auto;
 	}
