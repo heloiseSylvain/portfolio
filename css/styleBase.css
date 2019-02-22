@@ -20,6 +20,10 @@ html{
 	scroll-behavior: smooth;
 }
 
+body{
+	overflow-y: hidden;
+}
+
 section{
 	min-height: 100vh;
 	max-height: auto;
@@ -87,7 +91,7 @@ section.accueil h1{
 }
 
 #aPropos p{
-	margin-left: 1vw;
+	margin-left: 2vw;
 	line-height: 22px;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -263,7 +267,7 @@ div#formDroite textarea{
 #btnEnvoyer{
 	margin-top: 12vh;
 	height: 5vh;
-	width: 18%;
+	width: 20vw;
 	background: #E0928E;
 	border: none;
 	color: white;
@@ -310,7 +314,12 @@ color: #4C6E53;
 }
 
 @media only screen and (max-width: 768px) {
-    
+
+	body{
+		overflow-y: visible;
+	}
+	
+	/*--------- Accueil ------------*/
     section.accueil{
         flex-direction: column;
         justify-content: flex-end;
@@ -327,16 +336,35 @@ color: #4C6E53;
         align-items: center;
     }
 
-    
     section.accueil h1{
         font-size: 10vw;
     }
     
-    
     .typewrite{
         font-size: 4vw;
 	}
+	/*------------ à propos --------------*/
 	
+	#aPropos-flex{
+		flex-direction: column;
+	}
+
+	#aPropos p{
+		margin-top: 2vh;
+		width: 86vw;
+	}	
+	
+	#aPropos-Droite{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+	section.aPropos h2{
+		left: 5vw;
+	}
+
+	/*----------- contacter -------------*/
 	section.competences, section.gallerie{
 		height: auto;
 	}
@@ -360,6 +388,12 @@ color: #4C6E53;
 		margin-top: 1vh;
 		width: 100%;
 	}
+
+	#btnEnvoyer{
+		width: 40vw;
+	}
+
+	/*----------- footer --------------*/
 
 	footer {
 		margin-bottom: 0.5vh;
