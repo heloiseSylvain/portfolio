@@ -64,6 +64,30 @@ section.accueil h1{
 	color: #E0928E;
 	font-size: 1.8vw;
 }
+
+
+/*---------------À propos-----------------------------------*/
+#aPropos{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+#aPropos-flex{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+#aPropos-flex p{
+	width: 25vw;
+}
+
+#photoMoi{
+	
+	background-image: url("../images/photo.jpg");
+}
+
 /*---------------compétences-----------------------------------*/
 
 section.competences {
