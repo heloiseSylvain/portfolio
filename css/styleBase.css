@@ -20,9 +20,9 @@ html{
 	scroll-behavior: smooth;
 }
 
-body{
+/*body{
 	overflow-y: hidden;
-}
+}*/
 
 section{
 	min-height: 100vh;
@@ -74,8 +74,21 @@ section.accueil h1{
 
 
 /*---------------À propos-----------------------------------*/
+.scroll{
+		position: fixed;
+		border: solid transparent;
+		border-width: 20px 20px 0 0;
+		padding: 1.3vw; /* Arrow Size */
+		box-shadow: -1px 1px 0 0 #4C6E53 inset;
+		-webkit-box-shadow: -1px 1px 0 0 #4C6E53 inset;
+		-webkit-transform: rotate(-45deg);
+		margin: auto;
+		bottom: 5vh;
+		z-index: 1;
+}
 
 #aPropos{
+	position: relative;
 	display: flex;
 	align-content: center;
 	justify-content: center;
@@ -344,6 +357,19 @@ color: #4C6E53;
         font-size: 4vw;
 	}
 	/*------------ à propos --------------*/
+
+	.scroll{
+		position: fixed;
+		border: solid transparent;
+		border-width: 20px 20px 0 0;
+		padding: 3vw; /* Arrow Size */
+		box-shadow: -1px 1px 0 0 #4C6E53 inset;
+		-webkit-box-shadow: -1px 1px 0 0 #4C6E53 inset;
+		-webkit-transform: rotate(-45deg);
+		margin: auto;
+		bottom: 5vh;
+		z-index: 1;
+}
 	
 	#aPropos-flex{
 		flex-direction: column;
@@ -359,6 +385,17 @@ color: #4C6E53;
 		justify-content: center;
 		align-content: center;
 	}
+
+	#aPropos-Gauche{
+		margin: auto;
+	}
+
+	
+	#photoMoi{
+		max-width: 330px; 
+		max-height: 330px;
+	}
+
 
 	section.aPropos h2{
 		left: 5vw;
