@@ -181,24 +181,25 @@ section.competences h2{
 
 /*---------------Gallerie-----------------------------------*/
 
-section.gallerie {
-	display: flex;
+section.gallery {
+	/*display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
+	align-items: center;*/
 } 
 
-section.gallerie h2{
+section.gallery h2{
 	position: absolute;
   	bottom: 0;
-  	left: 0;
+  	left: 1vw;
   	transform-origin: left;
 	margin: 0;
 	color: #4C6E53;
 	transform: rotate(-90deg);
+    z-index: 1;
 }
 
-section.gallerie div#conteneurGallerie{
+/*section.gallery div#conteneurGallerie{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -207,7 +208,7 @@ section.gallerie div#conteneurGallerie{
 	width: 85%;
 }
 
-section.gallerie div#conteneurGallerie div{
+section.gallery div#conteneurGallerie div{
 	background-color: white;
 	width: 25vw;
 	height: 30vh;
@@ -215,9 +216,9 @@ section.gallerie div#conteneurGallerie div{
 	flex-grow: 1;
 }
 
-section.gallerie div#conteneurGallerie div:first-child{
+section.gallery div#conteneurGallerie div:first-child{
 	position: relative;
-	}
+}*/
 
 
 /*---------------Contacter-----------------------------------*/

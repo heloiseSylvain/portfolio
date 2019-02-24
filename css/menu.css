@@ -49,19 +49,19 @@ body {
   width: 40px;
 }
 
-#burger-menu.close span {
+#burger-menu.closeMenu span {
    background: #F9ECEB;
   transform: rotate(-45deg);
   top: 13px;
   width: 40px;
 }
-#burger-menu.close span:before {
+#burger-menu.closeMenu span:before {
    background: #F9ECEB;
   top: 0px;
   transform: rotate(90deg);
   width: 40px;
 }
-#burger-menu.close span:after {
+#burger-menu.closeMenu span:after {
    background: #F9ECEB;
   top: 0px;
   left:0;
