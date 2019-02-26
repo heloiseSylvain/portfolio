@@ -20,9 +20,9 @@ html{
 	scroll-behavior: smooth;
 }
 
-.hidden{
-	overflow-y: hidden;
-}
+html, body {
+	overflow-x:hidden;
+} 
 
 section{
 	min-height: 100vh;
@@ -73,6 +73,7 @@ section.accueil h1{
 }
 
 .boutonTop{
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	text-decoration: none;
 	margin-top: 2vh;
@@ -123,12 +124,25 @@ section.accueil h1{
 
 #aPropos p{
 	margin-left: 2vw;
-	line-height: 22px;
+	line-height: 25px;
+	letter-spacing: 1px;
 	margin-top: auto;
 	margin-bottom: auto;
 	color: #4C6E53;
 	width: 35vw;
 	text-align: justify;
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+}
+
+#aPropos p::after{
+	content:"";
+    position: absolute;
+    bottom: -2vh;
+    left: -8vw;
+    right: 0;
+    border-top: 1px solid #E0928E;
+    z-index: 1;
 }
 
 #photoMoi{
@@ -175,8 +189,19 @@ section.competences {
 
 section.competences h2{
 	color: #4C6E53;
-	margin-left: 10vw;
-	align-self: flex-start;
+	margin-left: 20vw;
+	margin-bottom: 15vh;
+	position: relative;
+}
+
+section.competences h2::after{
+	content:"";
+    position: absolute;
+    bottom: -2vh;
+    left: 0;
+    right: -40vw;
+    border-top: 1px solid #E0928E;
+    z-index: 1;
 }
 
 /*---------------Gallerie-----------------------------------*/
@@ -232,8 +257,19 @@ section.contacter{
 
 section.contacter h2{
 	color: #4C6E53;
-	margin-right: 18vw;
-	align-self: flex-end;
+	margin-left: 20vw;
+	margin-bottom: 15vh;
+	position: relative;
+}
+
+section.contacter h2::after{
+	content:"";
+    position: absolute;
+    bottom: -2vh;
+    left: 0;
+    right: -40vw;
+    border-top: 1px solid #E0928E;
+    z-index: 1;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -242,6 +278,7 @@ section.contacter h2{
 }
 
 section.contacter form {
+	
 	width: 90%;
 	display: flex;
 	flex-wrap: wrap;
@@ -261,6 +298,7 @@ div#formGauche{
 }
 
 div#formGauche input{
+	font-family: 'Roboto', sans-serif;
 	flex-grow: 1;
 	border: none;
 	padding: 1vw;
@@ -286,6 +324,7 @@ div#formDroite {
 }
 
 div#formDroite textarea{
+	font-family: 'Roboto', sans-serif;
 	flex-grow: 1;
 	border: none;
 	padding-left: 1vw;
@@ -305,6 +344,7 @@ div#formDroite textarea{
 	color: white;
 	cursor: pointer;
 	transition: 0.3s ease-in-out;
+	font-family: 'Roboto', sans-serif;
 }
 
 .bouton:hover{

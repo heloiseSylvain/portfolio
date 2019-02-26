@@ -13,9 +13,7 @@ $(document).scroll(function () {
     var y = $(this).scrollTop();
     if (y > 500) {
         $('.scroll').fadeIn();
-        $('body').removeClass('hidden');
     } else {
         $('.scroll').fadeOut();
-        $('body').addClass('hidden');
     }
 });
