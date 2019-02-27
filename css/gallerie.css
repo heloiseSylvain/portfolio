@@ -76,7 +76,7 @@ flex: 0 0 33.3333%;
   width: 100%;
   top: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(76,110,83,0.4);
   content: "";
   opacity: 0;
   -webkit-transition: all 0.3s linear;
