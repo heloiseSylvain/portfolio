@@ -6,7 +6,6 @@ $( document ).ready(function() {
 
 
  $('.gallery ul li a').click(function() {
-     $('body').addClass('hidden');
      $('.close').show();
      var itemID = $(this).attr('href');
      $('.gallery ul').addClass('item_open');
@@ -16,7 +15,6 @@ $( document ).ready(function() {
  $('.close').click(function() {
      $('.close').hide();
      $('.port, .gallery ul').removeClass('item_open');
-     $('body').removeClass('hidden');
      return false;
  });
 
