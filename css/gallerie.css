@@ -119,11 +119,6 @@ flex: 0 0 33.3333%;
     margin-top: 3vh;
 }
 
-.port h1#titreProjet{
-  font-size:3vw;
-  color: #E0928E;
-}
-
 .port .description p#descProjet{
   text-align: justify;
   font-family: 'Roboto', sans-serif;

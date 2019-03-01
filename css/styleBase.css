@@ -218,8 +218,23 @@ section.gallery h2{
     z-index: 1;
 }
 
+.port h3#dateProjet, .port h3#coursProjet{
+	font-size:1.3vw;
+	margin: 0;
+	color: #4C6E53;
+}
+
+.port h3#dateProjet{
+	margin-top: 2vh;
+}
+
 .port{
 	padding: 10vh 5vw;
+}
+
+.port h1#titreProjet{
+	font-size:3vw;
+	color: #E0928E;
 }
 
 .port .description {
@@ -517,14 +532,18 @@ footer p{
 	.port{
 		padding: 5vh 5vw;
 	}
-	.port .description h1#titreProjet{
+	.port h1#titreProjet{
 		font-size: 6vw;
 	}
 
 	.port .description p#descProjet {
 		font-size: 3.5vw;
 	}
-
+	
+	.port h3#dateProjet,  .port h3#coursProjet{
+		font-size: 4vw;
+	}
+	
 	#boutonProjet{
 		padding-top: 1vh;
 		padding-bottom: 1vh;
