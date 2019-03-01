@@ -207,13 +207,6 @@ section.competences h2::after{
 
 /*---------------Gallerie-----------------------------------*/
 
-section.gallery {
-	/*display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;*/
-} 
-
 section.gallery h2{
 	position: absolute;
   	bottom: 0;
@@ -225,26 +218,41 @@ section.gallery h2{
     z-index: 1;
 }
 
-/*section.gallery div#conteneurGallerie{
+.port{
+	padding: 10vh 5vw;
+}
+
+.port .description {
+	width: 40%;
+	overflow: auto;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	align-items: center;
-	width: 85%;
+    flex-direction: column;
+  }
+
+#boutonProjet{
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 4vh;
+	margin-left: auto;
+	margin-right: auto; 
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	padding-left: 4vw;
+	padding-right: 4vw;
+	width: 50%;
+	background: #E0928E;
+	border: none;
+	color: white;
+	cursor: pointer;
+	font-size: 1vw;
+	transition: 0.3s ease-in-out;
 }
 
-section.gallery div#conteneurGallerie div{
-	background-color: white;
-	width: 25vw;
-	height: 30vh;
-	margin: 1vw;
-	flex-grow: 1;
+#boutonProjet:hover{
+	background: #4C6E53;
 }
 
-section.gallery div#conteneurGallerie div:first-child{
-	position: relative;
-}*/
 
 
 /*---------------Contacter-----------------------------------*/
@@ -363,9 +371,9 @@ footer {
 }
 
 footer p{
-font-size: 2vh;
-text-align: center;
-color: #4C6E53;
+	font-size: 2vh;
+	text-align: center;
+	color: #4C6E53;
 }
 
 /*-----------------------------Petits écrans----------------------*/
@@ -504,6 +512,25 @@ color: #4C6E53;
 
 	.bouton{
 		width: 40vw;
+	}
+	/*----------------gallerie--------------------*/
+	.port{
+		padding: 5vh 5vw;
+	}
+	.port .description h1#titreProjet{
+		font-size: 6vw;
+	}
+
+	.port .description p#descProjet {
+		font-size: 3.5vw;
+	}
+
+	#boutonProjet{
+		padding-top: 1vh;
+		padding-bottom: 1vh;
+		padding-left: 5vw;
+		padding-right: 5vw;;
+		font-size: 3vw;
 	}
 
 	/*----------- footer --------------*/
