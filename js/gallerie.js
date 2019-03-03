@@ -2,6 +2,7 @@
 
 $( document ).ready(function() {
     $('.close').hide();
+    $('#vimeo').hide();
 });
 
 
@@ -10,6 +11,7 @@ $( document ).ready(function() {
      var itemID = $(this).attr('href');
      $('.gallery ul').addClass('item_open');
      $(itemID).addClass('item_open');
+     $('#imgProjet').show();
      
      switch (event.target.id) { 
         case 'projet1': 
@@ -27,7 +29,9 @@ $( document ).ready(function() {
             $('#coursProjet').text('tiM-528 cRéAtion 3d-3'); 
             $('#descProjet').text(''); 
             $('#boutonProjet').attr('href','');
-            $('#imgProjet').attr('src','images/sphFilmLarge.png');
+            $('#imgProjet').hide();
+            $('#vimeo').show();
+            $('#videoProjet').attr('src','https://player.vimeo.com/video/321081778?color=ffffff&title=0&byline=0&portrait=0');
             break;
 
         case 'projet3': 
@@ -64,7 +68,9 @@ $( document ).ready(function() {
             $('#coursProjet').text('tiM-629 créAtion Vidéo 2'); 
             $('#descProjet').text(''); 
             $('#boutonProjet').attr('href',''); 
-            $('#imgProjet').attr('src','images/videoLarge.png');
+            $('#imgProjet').hide();
+            $('#vimeo').show();
+            $('#videoProjet').attr('src','https://player.vimeo.com/video/320058839?color=ffffff&title=0&byline=0&portrait=0');
             break;
     }
 
@@ -74,6 +80,7 @@ $( document ).ready(function() {
      $('.close').hide();
      $('.port, .gallery ul').removeClass('item_open');
      $('#imgProjet').removeClass('plannificateurImg');
+     $('#vimeo').hide();
      return false;
  });
 

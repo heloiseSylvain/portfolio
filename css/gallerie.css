@@ -117,6 +117,11 @@ flex: 0 0 33.3333%;
     max-height: 100%;
 }
 
+#vimeo{
+  width: 50%;
+  height: 50%;
+}
+
 .port .row {
   display: flex;
     flex-direction: row;
@@ -193,17 +198,22 @@ flex: 0 0 33.3333%;
     flex: 0 0 50%;
     } 
 
-    .port img {
+  .port img {
       height: auto; 
       width: auto; 
       max-height: 40%;
       margin-top: auto;
       margin-bottom: auto;
   }
-
   .port .description{
     margin-top: auto;
     margin-bottom: auto;
+  }
+
+  #vimeo{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding:56.25% 0 0 0;
   }
 
 }
@@ -240,5 +250,9 @@ flex: 0 0 33.3333%;
 
     }
 
+    #vimeo{
+      width: 100%;
+      height: 100%;
+    }
 
 }
