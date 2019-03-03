@@ -110,6 +110,13 @@ flex: 0 0 33.3333%;
     max-height: 60%;
 }
 
+.port img.plannificateurImg{
+   height: auto; 
+    width: auto; 
+    max-width: 100%; 
+    max-height: 100%;
+}
+
 .port .row {
   display: flex;
     flex-direction: row;
@@ -194,7 +201,14 @@ flex: 0 0 33.3333%;
   .gallery ul li {
     list-style: none;
     flex: 0 0 100%;
-    }   
+    }
+    
+    .port{
+      overflow-y: scroll;
+      height: auto;
+      max-height: 100%;
+      min-height: 100vh;
+    }
 
     .port .row {
         flex-direction: column;

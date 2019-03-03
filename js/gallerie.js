@@ -27,7 +27,7 @@ $( document ).ready(function() {
             $('#coursProjet').text('tiM-528 cRéAtion 3d-3'); 
             $('#descProjet').text(''); 
             $('#boutonProjet').attr('href','');
-            $('#imgProjet').attr('src','images/sphFilm.png');
+            $('#imgProjet').attr('src','images/sphFilmLarge.png');
             break;
 
         case 'projet3': 
@@ -36,7 +36,7 @@ $( document ).ready(function() {
             $('#coursProjet').text('tiM-636 pRojet de fin d’études');  
             $('#descProjet').text(''); 
             $('#boutonProjet').attr('href',''); 
-            $('#imgProjet').attr('src','images/figma.png');
+            $('#imgProjet').attr('src','images/figmaLarge.png');
             break;	
 
         case 'projet4': 
@@ -54,7 +54,8 @@ $( document ).ready(function() {
             $('#coursProjet').text('projet personnel'); 
             $('#descProjet').text('Étant obsédé par l\'organisation et passionné de design, j\'ai décidé de joindre l\'utile à l\'agréable en me créant des pages de planificateur personnalisées.'); 
             $('#boutonProjet').attr('href',''); 
-            $('#imgProjet').attr('src','images/planner.png');
+            $('#imgProjet').attr('src','images/plannerLarge.png');
+            $('#imgProjet').addClass('plannificateurImg');
             break;
 
         case 'projet6': 
@@ -63,7 +64,7 @@ $( document ).ready(function() {
             $('#coursProjet').text('tiM-629 créAtion Vidéo 2'); 
             $('#descProjet').text(''); 
             $('#boutonProjet').attr('href',''); 
-            $('#imgProjet').attr('src','images/tpVideoCopie.png');
+            $('#imgProjet').attr('src','images/videoLarge.png');
             break;
     }
 
@@ -72,6 +73,7 @@ $( document ).ready(function() {
  $('.close').click(function() {
      $('.close').hide();
      $('.port, .gallery ul').removeClass('item_open');
+     $('#imgProjet').removeClass('plannificateurImg');
      return false;
  });
 
