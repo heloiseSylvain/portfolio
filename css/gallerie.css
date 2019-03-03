@@ -135,6 +135,10 @@ flex: 0 0 33.3333%;
   margin-bottom: 4vh;
 }
 
+.port .description h1#titreProjet{
+  margin-top: 0;
+}
+
 .port > * {
   opacity: 0;
   -webkit-transition: all 0.5s linear;
@@ -188,6 +192,19 @@ flex: 0 0 33.3333%;
     list-style: none;
     flex: 0 0 50%;
     } 
+
+    .port img {
+      height: auto; 
+      width: auto; 
+      max-height: 40%;
+      margin-top: auto;
+      margin-bottom: auto;
+  }
+
+  .port .description{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 
 }
 
