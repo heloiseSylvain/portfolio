@@ -1,0 +1,28 @@
+
+.animeLigne::after {
+    animation: ligne 1.5s both;
+}
+
+@keyframes ligne {
+    from {
+        left: 400px;
+    }
+    to {
+        left: -8vw;
+    }
+  }
+
+
+  
+.animeLigneDroite::after {
+    animation: ligneDroite 1.5s both;
+}
+
+@keyframes ligneDroite {
+    from {
+        right: 400px;
+    }
+    to {
+        right: -40vw;
+    }
+  }

@@ -120,3 +120,14 @@ body {
 .strike:hover{
    border-color: #F9ECEB;
 }
+
+
+/*-----------------------------Petits écrans----------------------*/
+@media only screen and (max-width: 1024px) {
+  
+  #burger-menu {
+    margin: 25px;
+  }
+
+
+}

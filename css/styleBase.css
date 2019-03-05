@@ -103,7 +103,7 @@ section.accueil h1{
 		-webkit-box-shadow: -1px 1px 0 0 #4C6E53 inset;
 		-webkit-transform: rotate(-45deg);
 		margin: auto;
-		bottom: 5vh;
+		bottom: 8vh;
 		z-index: 1;
 }
 
@@ -140,7 +140,7 @@ section.accueil h1{
 	content:"";
     position: absolute;
     bottom: -2vh;
-    left: -8vw;
+    left: 800px;
     right: 0;
     border-top: 1px solid #E0928E;
     z-index: 1;
@@ -200,7 +200,7 @@ section.competences h2::after{
     position: absolute;
     bottom: -2vh;
     left: 0;
-    right: -40vw;
+    right: 400px;
     border-top: 1px solid #E0928E;
     z-index: 1;
 }
@@ -291,7 +291,7 @@ section.contacter h2::after{
     position: absolute;
     bottom: -2vh;
     left: 0;
-    right: -40vw;
+    right: 400px;
     border-top: 1px solid #E0928E;
     z-index: 1;
 }
@@ -393,6 +393,7 @@ footer p{
 
 /*-----------------------------Petits écrans----------------------*/
 @media only screen and (max-width: 1024px) {
+	
 
 	section.gallerie div#conteneurGallerie div{
 		width: 226px;
@@ -410,12 +411,24 @@ footer p{
 	}
 
 	footer p{
+		display: none;
 		font-size: 2vh;
 		margin:0.5vh;
+	}
+
+	footer p:first-child {
+		display: block;
 	}
 }
 
 @media only screen and (max-width: 768px) {
+	section{
+		min-height: auto;
+	}
+
+	section#contacter{
+		margin-top: 15vh;
+	}
 
 	.hidden{
 		overflow-y: visible;
@@ -424,7 +437,7 @@ footer p{
 	/*--------- Accueil ------------*/
     section.accueil{
         flex-direction: column;
-        justify-content: flex-end;
+		justify-content: flex-end;
     }
     
     section.accueil div#accueil-flex{
@@ -452,17 +465,14 @@ footer p{
 	}
 	/*------------ à propos --------------*/
 
+	section.aPropos{
+		margin-top: 15vh;
+		margin-bottom: 15vh;
+	}
+
 	.scroll{
-		position: fixed;
-		border: solid transparent;
-		border-width: 20px 20px 0 0;
-		padding: 3vw; /* Arrow Size */
-		box-shadow: -1px 1px 0 0 #4C6E53 inset;
-		-webkit-box-shadow: -1px 1px 0 0 #4C6E53 inset;
-		-webkit-transform: rotate(-45deg);
-		margin: auto;
-		bottom: 5vh;
-		z-index: 1;
+		padding: 2.5vw; /* Arrow Size */
+		bottom: 3vh;
 }
 	
 	#aPropos-flex{
@@ -512,7 +522,7 @@ footer p{
 
 	div#formGauche{
 		height: 25vh;
-		width: 97%;
+		width: 100%;
 		margin-right: 0;
 	}
 
@@ -525,8 +535,13 @@ footer p{
 		width: 100%;
 	}
 
+	div#formDroite textarea{
+		padding-top: 2.5vh;
+	}
+
 	.bouton{
 		width: 40vw;
+		margin-top: 5vh;
 	}
 	/*----------------gallerie--------------------*/
 	.port{
@@ -556,6 +571,7 @@ footer p{
 
 	footer {
 		margin-bottom: 0.5vh;
+		margin-top: 5vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -563,7 +579,12 @@ footer p{
 	}
 
 	footer p{
+		display: none;
 		font-size: 1.5vh;
 		margin:0.5vh;
+	}
+
+	footer p:first-child {
+		display: block;
 	}
 }
