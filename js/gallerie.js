@@ -57,7 +57,7 @@ $( document ).ready(function() {
             $('#dateProjet').text('');
             $('#coursProjet').text('projet personnel'); 
             $('#descProjet').text('Étant obsédé par l\'organisation et passionné de design, j\'ai décidé de joindre l\'utile à l\'agréable en me créant des pages de planificateur personnalisées.'); 
-            $('#boutonProjet').attr('href',''); 
+            $('#boutonProjet').attr('href','../plannificateur.html'); 
             $('#imgProjet').attr('src','images/plannerLarge.png');
             $('#imgProjet').addClass('plannificateurImg');
             break;
