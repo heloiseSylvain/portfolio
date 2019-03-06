@@ -138,9 +138,9 @@ box-shadow: 5px 8px 28px -12px rgba(224,146,141,0.5);
   text-align: justify;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-  color: #4C6E53;
   line-height: 3.5vh;
   margin-bottom: 4vh;
+  color: #888888;
 }
 
 .port .description h1#titreProjet{

@@ -1,0 +1,59 @@
+
+span.btnRetour{
+    position: relative;
+}
+
+span.btnRetour a{
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    text-decoration: none;
+    color: #E0928E;
+    transition: 0.3s ease-in-out;
+}
+
+span.btnRetour a:hover{
+    color: #4C6E53;
+}
+
+.pageProjetTitre {
+    margin-top: 15vh;
+    font-size:3vw;
+    color: #4C6E53;
+    text-align: center;
+}
+
+.pageProjetPara{
+    color: #888888;
+    font-family: 'Roboto', sans-serif;
+    width: 80vw;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-size: 1.2vw;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+
+    span.btnRetour a{
+        position: absolute;
+        top: -10vh;
+        left: 10vw;
+        font-size: 3.5vw;
+    }
+    
+    .pageProjetTitre {
+        font-size:6vw;
+    }
+
+    .pageProjetPara{
+        font-size: 3vw;
+    }
+
+
+}
+
+
