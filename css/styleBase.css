@@ -221,7 +221,7 @@ section.gallery h2{
 .port h3#dateProjet, .port h3#coursProjet{
 	font-size:1.3vw;
 	margin: 0;
-	color: #4C6E53;
+	color: #E0928E;
 }
 
 .port h3#dateProjet{
@@ -234,7 +234,7 @@ section.gallery h2{
 
 .port h1#titreProjet{
 	font-size:3vw;
-	color: #E0928E;
+	color: #4C6E53;
 }
 
 .port .description {
