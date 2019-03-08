@@ -19,7 +19,7 @@ $( document ).ready(function() {
             $('#dateProjet').text('AutoMne 2018');
             $('#coursProjet').text('tiM-554 production Web'); 
             $('#descProjet').text('Le fol espoir est un site web que mon équipe et moi avons réalisé pour notre client, le département d\'arts et lettres, dans le cadre de notre cours de production web en Techniques intégration multimédia au collège de Maisonneuve. '); 
-            $('#boutonProjet').attr('href',''); 
+            $('#boutonProjet').attr('href','lefolespoir.html'); 
             $('#imgProjet').attr('src','images/lfe.png');
             break;
 
