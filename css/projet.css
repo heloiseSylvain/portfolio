@@ -6,17 +6,15 @@ div.descriptionProjet{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
+    margin: 5vh auto;
 }
-
-
 
 span.btnRetour{
     position: relative;
 }
 
 span.btnRetour a{
-    position: fixed;
+    position: absolute;
     top: 5vh;
     left: 5vw;
     text-decoration: none;
@@ -24,7 +22,14 @@ span.btnRetour a{
     transition: 0.3s ease-in-out;
 }
 
- h3.pageProjetDate, h3.pageProjetCours{
+h2.projetH2{
+    font-size:2vw;
+    margin: 0;
+    margin-bottom: 1vh;
+    color: #4C6E53;
+}
+
+ h3.projetH3{
     font-size:1.3vw;
     margin: 0;
     margin-bottom: 1vh;
@@ -52,18 +57,38 @@ span.btnRetour a:hover{
     text-align: justify;
     margin-left: auto;
     margin-right: auto;
-    text-transform: uppercase;
+}
+
+div.descriptionProjet li{
+    color: #888888;
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-size: 1.2vw;
+    text-align: justify;
 }
 
 @media only screen and (max-width: 768px) {
 
     span.btnRetour a{
-        position: absolute;
         font-size: 3.5vw;
     }
     
     .pageProjetTitre {
         font-size:6vw;
+    }
+
+    h2.projetH2{
+        font-size:5vw;
+    }
+    
+     h3.projetH3{
+        font-size:4vw;
+    }
+
+    div.descriptionProjet li{
+        font-size: 3vw;
+        line-height: 4vh;
     }
 
     h3.pageProjetDate, h3.pageProjetCours{

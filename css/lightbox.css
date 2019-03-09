@@ -7,19 +7,19 @@ main{
 	cursor: pointer;
 }
 
-.AI_lightbox_grid{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
+.AI_lightbox_grid ul li {
+	list-style: none;
+	flex: 0 0 30%;
+	margin: 0.5vw;
+}
+
+.AI_lightbox_grid ul li.imgMaquettesLFE{
+	flex: 0 0 14%;
 }
 
 .AI_lightbox_grid img{
-	width: 35%;
+	width: 100%;
 	height: auto;
-	margin-top: 2.5vh;
-	margin-bottom: 2.5vh;
 }
 
 #AI_lightbox {
@@ -72,23 +72,19 @@ main{
 	transform: translate(-50%,-50%);
 }
 
-/*.AI_lightbox_grid .block {
-	float: left;
-	width: 33.3vw;
-	height: 33.3vw;
-	overflow: hidden;
+section.AI_lightbox_grid {
+	min-height: auto;
 }
-.AI_lightbox_grid .block img {
-	height: 100%;
-	left: 50%;
-	transform: translate(-50%,0px);
-}*/
+
 
 
 @media only screen and (max-width: 768px) {
-	
-	.AI_lightbox_grid img{
-		width: 80%;
+
+	.AI_lightbox_grid ul li {
+		list-style: none;
+		flex: 0 0 100%;
 	}
+
+
 
 }

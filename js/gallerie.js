@@ -88,4 +88,4 @@ $( document ).ready(function() {
      $('html, body').animate({
          scrollTop: parseInt($("#top").offset().top)
      }, 100);
- });
+});
