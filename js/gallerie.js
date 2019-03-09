@@ -48,7 +48,7 @@ $( document ).ready(function() {
             $('#dateProjet').text('AutoMne 2018');
             $('#coursProjet').text('tiM-552 déVeloppeMent de jeu'); 
             $('#descProjet').text('Sphaera est un jeu d\'aventure de type " cartoon / lowpoly " en 3D destiné aux jeunes entre 8 et 16 ans que mon équipe et moi avons développé dans le cadre de notre cours "Développement de jeu" du programme Techniques intégration multimédia au collège de Maisonneuve.'); 
-            $('#boutonProjet').attr('href',''); 
+            $('#boutonProjet').attr('href','sphaeraJeu.html'); 
             $('#imgProjet').attr('src','images/sphJeuLarge.png');
             break;
 
