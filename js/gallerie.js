@@ -66,7 +66,7 @@
                 $('#titreProjet').text('bois Mystiques');
                 $('#dateProjet').text('HiVeR 2019');
                 $('#coursProjet').text('tiM-629 créAtion Vidéo 2'); 
-                $('#descProjet').text('Bois mystiques est une courte animation 2D que j\'ai créer dans le logiciel Adobe After Effect, pour mon cours de Création vidéo II en Techniques d\'intégration multimédia au collège de Maisonneuve.'); 
+                $('#descProjet').text('Bois mystiques est une courte animation 2D que j\'ai créé dans le logiciel Adobe After Effect, pour mon cours de Création vidéo II en Techniques d\'intégration multimédia au collège de Maisonneuve.'); 
                 $('#boutonProjet').attr('href','boisMystiques.html'); 
                 $('#imgProjet').hide();
                 $('#vimeo').show();
