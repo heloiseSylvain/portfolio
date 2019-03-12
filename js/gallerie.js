@@ -47,7 +47,7 @@
                 $('#titreProjet').text('spHAeRA (jeu)');
                 $('#dateProjet').text('AutoMne 2018');
                 $('#coursProjet').text('tiM-552 déVeloppeMent de jeu'); 
-                $('#descProjet').text('Sphaera est un jeu d\'aventure de type " cartoon / lowpoly " en 3D destiné aux jeunes entre 8 et 16 ans que mon équipe et moi avons développé dans le cadre de notre cours "Développement de jeu" du programme Techniques intégration multimédia au collège de Maisonneuve.'); 
+                $('#descProjet').text('Sphaera est un jeu d\'aventures de type " cartoon / lowpoly " en 3D destiné aux jeunes entre 8 et 16 ans que mon équipe et moi avons développé dans le cadre de notre cours "Développement de jeu" du programme Techniques intégration multimédia au collège de Maisonneuve.'); 
                 $('#boutonProjet').attr('href','sphaeraJeu.html'); 
                 $('#imgProjet').attr('src','images/sphJeuLarge.png');
                 break;
@@ -66,7 +66,7 @@
                 $('#titreProjet').text('bois Mystiques');
                 $('#dateProjet').text('HiVeR 2019');
                 $('#coursProjet').text('tiM-629 créAtion Vidéo 2'); 
-                $('#descProjet').text('Bois mystiques est une courte animation 2D que j\'ai créé dans le logiciel Adobe After Effect, pour mon cours de Création vidéo II en Techniques d\'intégration multimédia au collège de Maisonneuve.'); 
+                $('#descProjet').text('Bois mystiques est une courte animation 2D que j\'ai créée dans le logiciel Adobe After Effect, pour mon cours de Création vidéo II en Techniques d\'intégration multimédia au collège de Maisonneuve.'); 
                 $('#boutonProjet').attr('href','boisMystiques.html'); 
                 $('#imgProjet').hide();
                 $('#vimeo').show();
