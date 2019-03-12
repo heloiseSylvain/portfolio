@@ -22,6 +22,12 @@ span.btnRetour a{
     transition: 0.3s ease-in-out;
 }
 
+a.lienP{
+    font-family: 'Roboto', sans-serif;
+    color: #E0928E;
+    
+}
+
 h2.projetH2{
     font-size:2vw;
     margin: 0;

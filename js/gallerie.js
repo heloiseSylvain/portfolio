@@ -41,6 +41,8 @@
                 $('#descProjet').text('Étant passionnée de design web, j\'ai décidé d\'orienter mon projet de fin d’études sur l\'apprentissage d’un logiciel de prototypage que nous n’avions pas utilisé au cours du programme, c’est-à-dire Figma.'); 
                 $('#boutonProjet').attr('href','maquettes.html'); 
                 $('#imgProjet').attr('src','images/figmaLarge.png');
+                $('#imgProjet').hide();
+                $('#maquette').show();
                 break;	
 
             case 'projet4': 
@@ -81,6 +83,7 @@
         $('.port, .gallery ul').removeClass('item_open');
         $('#imgProjet').removeClass('plannificateurImg');
         $('#vimeo').hide();
+        $('#maquette').hide();
         return false;
     });
 
