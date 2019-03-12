@@ -74,7 +74,10 @@ div.descriptionProjet li{
     text-align: justify;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+    #prototype{
+        height: 200px;
+    }
 
     span.btnRetour a{
         font-size: 3.5vw;
