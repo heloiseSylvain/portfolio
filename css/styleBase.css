@@ -96,15 +96,24 @@ section.accueil h1{
 /*---------------À propos-----------------------------------*/
 .scroll{
 		position: fixed;
-		border: solid transparent;
+		/*border: solid transparent;
 		border-width: 20px 20px 0 0;
 		padding: 1.3vw; /* Arrow Size */
-		box-shadow: -1px 1px 0 0 #4C6E53 inset;
+		/*box-shadow: -1px 1px 0 0 #4C6E53 inset;
 		-webkit-box-shadow: -1px 1px 0 0 #4C6E53 inset;
-		-webkit-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);*/
+		text-decoration: none;
+		color: #4C6E53;
+		font-size: 3.5vw;
 		margin: auto;
 		bottom: 8vh;
 		z-index: 1;
+		transition: 0.3s ease-in-out;
+}
+
+.scroll:hover{
+	color: #E0928E;
+	font-size: 4vw;
 }
 
 #aPropos{
@@ -473,7 +482,14 @@ footer p{
 	.scroll{
 		padding: 2.5vw; /* Arrow Size */
 		bottom: 3vh;
-}
+		font-size: 10vw;
+	}
+
+	.scroll:hover{
+		color: #E0928E;
+		font-size: 10vw;
+	}
+
 	
 	#aPropos-flex{
 		flex-direction: column;
@@ -571,7 +587,7 @@ footer p{
 
 	footer {
 		margin-bottom: 0.5vh;
-		margin-top: 5vh;
+		margin-top: 10vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
