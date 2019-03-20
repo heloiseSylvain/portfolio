@@ -100,8 +100,8 @@ section.accueil h1{
 		border-width: 20px 20px 0 0;
 		padding: 1.3vw; /* Arrow Size */
 		/*box-shadow: -1px 1px 0 0 #4C6E53 inset;
-		-webkit-box-shadow: -1px 1px 0 0 #4C6E53 inset;
-		-webkit-transform: rotate(-45deg);*/
+		-webkit-box-shadow: -1px 1px 0 0 #4C6E53 inset;*/
+		-webkit-transform: rotate(90deg);
 		text-decoration: none;
 		color: #4C6E53;
 		font-size: 3.5vw;
